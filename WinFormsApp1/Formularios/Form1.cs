@@ -65,7 +65,6 @@ namespace WinFormsApp1 {
         }
 
         private void txt_numero1_KeyPress(object sender, KeyPressEventArgs e) {
-
             e.Handled = Utils.validarDecimal(e.KeyChar);
         }
 
