@@ -46,7 +46,7 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void btn_calcular_Click(object sender, EventArgs e) {
-
+    
             double[] datos_in = new double[7];
             double[] datos_out = new double[13];
 
