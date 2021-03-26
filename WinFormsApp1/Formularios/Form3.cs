@@ -23,36 +23,6 @@ namespace WinFormsApp1.Formularios {
             this.menu.Show();
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_operar_Click(object sender, EventArgs e)
         {
             double correcta = 0, incorrecta = 0, blanco = 0;
