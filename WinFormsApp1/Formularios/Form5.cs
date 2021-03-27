@@ -12,7 +12,6 @@ namespace WinFormsApp1.Formularios {
 
         Form menu;
         DataTable tabla;
-        string repetir;
         int nErrors = 0, nDias;
         double tempMax = 0, tempMin = 0, med = 0, max = 0, min = 0;
         double[][] temps;
@@ -43,7 +42,7 @@ namespace WinFormsApp1.Formularios {
 
         private void btn_adicionar_Click(object sender, EventArgs e)
         {
-            // New row
+            // New row demo
             tabla = new DataTable();
             if (Int32.Parse(textTemMax.Text) == Int32.Parse(textTemMin.Text))
             {

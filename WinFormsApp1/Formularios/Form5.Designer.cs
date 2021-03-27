@@ -24,11 +24,9 @@ namespace WinFormsApp1.Formularios {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-=======
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
->>>>>>> 7c2edaad0b27292f82a326f545e9f24124305482
+
             this.btn_salir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -108,13 +106,11 @@ namespace WinFormsApp1.Formularios {
             // 
             // pictureBox1
             // 
-<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(17, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-=======
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
->>>>>>> 7c2edaad0b27292f82a326f545e9f24124305482
+
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(57, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
