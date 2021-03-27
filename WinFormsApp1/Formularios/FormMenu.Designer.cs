@@ -24,6 +24,7 @@ namespace WinFormsApp1.Formularios {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.labeltitle = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.grpMenu = new System.Windows.Forms.GroupBox();
@@ -234,7 +235,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::WinFormsApp1.Properties.Resources.ECCI;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
@@ -244,7 +245,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WinFormsApp1.Properties.Resources.enjoy;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(380, 160);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(355, 177);
