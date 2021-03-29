@@ -26,21 +26,11 @@ namespace WinFormsApp1.Formularios {
             input_prod.Enabled = true;
             input_prod.Text = "";
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_numero1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_operar_Click(object sender, EventArgs e)
         {
             num  = int.Parse(input_prod.Text);
             tabla = new DataTable();
+            tabla.Columns.Add("Números", typeof(float));
             tabledata.DataSource = tabla;
             for (int i = 0; i < num; i++)
             {
@@ -58,26 +48,26 @@ namespace WinFormsApp1.Formularios {
             int positivo = 0;
             int negativo = 0;
             int cero = 0;
-            int cant;
 
             double numPositivos = 0;
             double numNegativos = 0;
 
             for (int i = 0; i < num; i++)
             {
-                string value = tabledata.Rows[i].Cells[0].Value.ToString();
+                double value;
+                double.TryParse(tabledata.Rows[i].Cells[0].Value.ToString(), out value);
                 
 
-                 if (int.Parse(value) > 0)
+                 if (value > 0)
                  {
                      positivo += 1;
-                     numPositivos += int.Parse(value);
+                     numPositivos += value;
                  }
                  else
-                     if (int.Parse(value) < 0)
+                     if (value < 0)
                  {
                      negativo += 1;
-                     numNegativos += int.Parse(value);
+                     numNegativos += value;
                  }
                  else
                  {
@@ -86,22 +76,10 @@ namespace WinFormsApp1.Formularios {
             }
             npositivos.Text = "La cantidad de positivos son: "+ positivo +" y suman en total: "  + numPositivos;
             nnegativos.Text = "La cantidad de negativos son: "+ negativo +" y suman en total: "  + numNegativos;
-            nneutros.Text = "La cantidad de negativos son: "+ cero +" y suman en total: "  + cero;
+            nneutros.Text = "La cantidad de neutros son: "+ cero +" y suman en total: 0" ;
         }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabledata_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+        private void input_prod_KeyPress(object sender, KeyPressEventArgs e) {
+            e.Handled = Utils.validarInt(e.KeyChar);
         }
     }
 }

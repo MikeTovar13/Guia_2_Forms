@@ -26,6 +26,7 @@ namespace WinFormsApp1.Formularios {
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_salir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -113,7 +114,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(12, 85);
+            this.label7.Location = new System.Drawing.Point(8, 83);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(148, 21);
             this.label7.TabIndex = 24;
@@ -123,6 +124,14 @@ namespace WinFormsApp1.Formularios {
             // 
             this.tableTemperature.AllowUserToAddRows = false;
             this.tableTemperature.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableTemperature.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tableTemperature.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableTemperature.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tempMaxi,
@@ -131,19 +140,19 @@ namespace WinFormsApp1.Formularios {
             this.tableTemperature.Location = new System.Drawing.Point(9, 223);
             this.tableTemperature.MultiSelect = false;
             this.tableTemperature.Name = "tableTemperature";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.NullValue = "Materia";
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableTemperature.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.NullValue = "Materia";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableTemperature.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.tableTemperature.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.tableTemperature.RowTemplate.Height = 25;
             this.tableTemperature.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableTemperature.Size = new System.Drawing.Size(328, 150);
+            this.tableTemperature.Size = new System.Drawing.Size(381, 180);
             this.tableTemperature.TabIndex = 63;
             // 
             // tempMaxi
@@ -151,14 +160,14 @@ namespace WinFormsApp1.Formularios {
             this.tempMaxi.HeaderText = "Temperatura máxima";
             this.tempMaxi.MinimumWidth = 8;
             this.tempMaxi.Name = "tempMaxi";
-            this.tempMaxi.Width = 220;
+            this.tempMaxi.Width = 150;
             // 
             // tempMini
             // 
             this.tempMini.HeaderText = "Temperatura mínima";
             this.tempMini.MinimumWidth = 8;
             this.tempMini.Name = "tempMini";
-            this.tempMini.Width = 220;
+            this.tempMini.Width = 150;
             // 
             // label4
             // 
@@ -196,6 +205,7 @@ namespace WinFormsApp1.Formularios {
             this.textTemMax.Name = "textTemMax";
             this.textTemMax.Size = new System.Drawing.Size(80, 23);
             this.textTemMax.TabIndex = 68;
+            this.textTemMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textTemMax_KeyPress);
             // 
             // textTemMin
             // 
@@ -203,6 +213,7 @@ namespace WinFormsApp1.Formularios {
             this.textTemMin.Name = "textTemMin";
             this.textTemMin.Size = new System.Drawing.Size(80, 23);
             this.textTemMin.TabIndex = 69;
+            this.textTemMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textTemMax_KeyPress);
             // 
             // btn_adicionar
             // 
@@ -218,7 +229,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(410, 210);
+            this.label6.Location = new System.Drawing.Point(410, 246);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 15);
             this.label6.TabIndex = 71;
@@ -227,7 +238,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.reportTempMediaA.AutoSize = true;
             this.reportTempMediaA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportTempMediaA.Location = new System.Drawing.Point(396, 247);
+            this.reportTempMediaA.Location = new System.Drawing.Point(396, 283);
             this.reportTempMediaA.Name = "reportTempMediaA";
             this.reportTempMediaA.Size = new System.Drawing.Size(0, 15);
             this.reportTempMediaA.TabIndex = 72;
@@ -236,7 +247,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.reportTempMaximaA.AutoSize = true;
             this.reportTempMaximaA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportTempMaximaA.Location = new System.Drawing.Point(396, 278);
+            this.reportTempMaximaA.Location = new System.Drawing.Point(396, 314);
             this.reportTempMaximaA.Name = "reportTempMaximaA";
             this.reportTempMaximaA.Size = new System.Drawing.Size(0, 15);
             this.reportTempMaximaA.TabIndex = 73;
@@ -245,7 +256,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.reportTempMinA.AutoSize = true;
             this.reportTempMinA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportTempMinA.Location = new System.Drawing.Point(396, 308);
+            this.reportTempMinA.Location = new System.Drawing.Point(396, 344);
             this.reportTempMinA.Name = "reportTempMinA";
             this.reportTempMinA.Size = new System.Drawing.Size(0, 15);
             this.reportTempMinA.TabIndex = 74;
@@ -254,7 +265,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.reportCatErrores.AutoSize = true;
             this.reportCatErrores.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportCatErrores.Location = new System.Drawing.Point(396, 340);
+            this.reportCatErrores.Location = new System.Drawing.Point(396, 376);
             this.reportCatErrores.Name = "reportCatErrores";
             this.reportCatErrores.Size = new System.Drawing.Size(0, 15);
             this.reportCatErrores.TabIndex = 75;
@@ -264,7 +275,7 @@ namespace WinFormsApp1.Formularios {
             this.labelError.AutoSize = true;
             this.labelError.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelError.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelError.Location = new System.Drawing.Point(9, 189);
+            this.labelError.Location = new System.Drawing.Point(16, 200);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(0, 15);
             this.labelError.TabIndex = 76;
@@ -272,10 +283,10 @@ namespace WinFormsApp1.Formularios {
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(396, 219);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(396, 251);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(119, 15);
+            this.label9.Size = new System.Drawing.Size(139, 17);
             this.label9.TabIndex = 77;
             this.label9.Text = "Temperatura máxima";
             // 
@@ -283,7 +294,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.reportTempMinB.AutoSize = true;
             this.reportTempMinB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportTempMinB.Location = new System.Drawing.Point(593, 308);
+            this.reportTempMinB.Location = new System.Drawing.Point(593, 344);
             this.reportTempMinB.Name = "reportTempMinB";
             this.reportTempMinB.Size = new System.Drawing.Size(0, 15);
             this.reportTempMinB.TabIndex = 80;
@@ -292,7 +303,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.reportTempMaximaB.AutoSize = true;
             this.reportTempMaximaB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportTempMaximaB.Location = new System.Drawing.Point(593, 278);
+            this.reportTempMaximaB.Location = new System.Drawing.Point(593, 314);
             this.reportTempMaximaB.Name = "reportTempMaximaB";
             this.reportTempMaximaB.Size = new System.Drawing.Size(0, 15);
             this.reportTempMaximaB.TabIndex = 79;
@@ -301,7 +312,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.reportTempMediaB.AutoSize = true;
             this.reportTempMediaB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reportTempMediaB.Location = new System.Drawing.Point(593, 247);
+            this.reportTempMediaB.Location = new System.Drawing.Point(593, 283);
             this.reportTempMediaB.Name = "reportTempMediaB";
             this.reportTempMediaB.Size = new System.Drawing.Size(0, 15);
             this.reportTempMediaB.TabIndex = 78;
@@ -309,20 +320,20 @@ namespace WinFormsApp1.Formularios {
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(396, 189);
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(396, 225);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 15);
+            this.label13.Size = new System.Drawing.Size(56, 17);
             this.label13.TabIndex = 81;
             this.label13.Text = "Reporte";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(593, 219);
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(593, 251);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(117, 15);
+            this.label14.Size = new System.Drawing.Size(137, 17);
             this.label14.TabIndex = 82;
             this.label14.Text = "Temperatura mínima";
             // 
@@ -359,7 +370,6 @@ namespace WinFormsApp1.Formularios {
             this.Name = "Form5";
             this.Text = "5. Estación climática";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form5_FormClosed);
-            this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableTemperature)).EndInit();
             this.ResumeLayout(false);
@@ -376,8 +386,6 @@ namespace WinFormsApp1.Formularios {
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView tableTemperature;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tempMaxi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tempMini;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
@@ -396,5 +404,7 @@ namespace WinFormsApp1.Formularios {
         private System.Windows.Forms.Label reportTempMediaB;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tempMaxi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tempMini;
     }
 }

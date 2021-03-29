@@ -33,8 +33,6 @@ namespace WinFormsApp1.Formularios {
             this.label7 = new System.Windows.Forms.Label();
             this.input_prod = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.incentivoLabel = new System.Windows.Forms.Label();
             this.ingresoLabel = new System.Windows.Forms.Label();
@@ -113,7 +111,7 @@ namespace WinFormsApp1.Formularios {
             this.input_prod.Name = "input_prod";
             this.input_prod.Size = new System.Drawing.Size(211, 23);
             this.input_prod.TabIndex = 31;
-            this.input_prod.TextChanged += new System.EventHandler(this.input_prod_TextChanged);
+            this.input_prod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.input_prod_KeyPress);
             // 
             // label6
             // 
@@ -124,25 +122,6 @@ namespace WinFormsApp1.Formularios {
             this.label6.Size = new System.Drawing.Size(270, 15);
             this.label6.TabIndex = 32;
             this.label6.Text = "Ingrese la producción realizada durante la semana";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(12, 166);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 15);
-            this.label4.TabIndex = 33;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(12, 199);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 15);
-            this.label5.TabIndex = 34;
             // 
             // label8
             // 
@@ -223,8 +202,6 @@ namespace WinFormsApp1.Formularios {
             this.Controls.Add(this.ingresoLabel);
             this.Controls.Add(this.incentivoLabel);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.input_prod);
             this.Controls.Add(this.label7);
@@ -251,8 +228,6 @@ namespace WinFormsApp1.Formularios {
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox input_prod;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label incentivoLabel;
         private System.Windows.Forms.Label ingresoLabel;

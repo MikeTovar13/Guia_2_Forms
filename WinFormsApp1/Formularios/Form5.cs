@@ -12,59 +12,41 @@ namespace WinFormsApp1.Formularios {
 
         Form menu;
         DataTable tabla;
-        int nErrors = 0, nDias;
-        double tempMax = 0, tempMin = 0, med = 0, max = 0, min = 0;
-        double[][] temps;
-
-        private void btn_show_Click(object sender, EventArgs e)
-        {
-            for (int ii = 0; ii < nDias; ii++)
-            {
-                this.calcularMedia(temps[ii]);
-                this.calcularMaxima(temps[ii]);
-                this.calcularMinima(temps[ii]);
-            }
-        }
-
-
-        private void calcularMedia(double[] temps)
-        {
-            med = temps.Average();
-            //Console.WriteLine("El promedio es {0}", med);
-        }
-
-        private void calcularMaxima(double[] temps)
-        {
-            max = temps.Max();
-            //Console.WriteLine("La temperatura máxima es {0}", max);
-
-        }
+        int nErrors = 0;
 
         private void btn_adicionar_Click(object sender, EventArgs e)
         {
             // New row demo
             tabla = new DataTable();
-            if (Int32.Parse(textTemMax.Text) == Int32.Parse(textTemMin.Text))
+            if (String.IsNullOrEmpty(textTemMax.Text) || String.IsNullOrEmpty(textTemMin.Text)) {
+                MessageBox.Show("Ambas stemperaturas son obligatorias");
+                return;
+            }
+           if (Int32.Parse(textTemMax.Text) == Int32.Parse(textTemMin.Text))
             {
                 labelError.Text = "Las temperaturas no pueden ser iguales";
                 nErrors = nErrors + 1;
                 textTemMax.Text = "";
                 textTemMin.Text = "";
-            } else if (Int32.Parse(textTemMax.Text) == 9)
+                return;
+            } else if (Int32.Parse(textTemMax.Text) >= 9)
             {
                 labelError.Text = "Temperatura invalida";
                 nErrors = nErrors + 1;
                 textTemMax.Text = "";
-            } else  if (Int32.Parse(textTemMin.Text) == 9)
+                return;
+            } else  if (Int32.Parse(textTemMin.Text) >= 9)
             {
                 labelError.Text = "Temperatura invalida";
                 nErrors = nErrors + 1;
                 textTemMin.Text = "";
+                return;
             } else if (Int32.Parse(textTemMin.Text) > Int32.Parse(textTemMax.Text))
             {
                 labelError.Text = "La temperatura debe ser menor a la máxima, ingrese una temperatura minima: ";
                 nErrors = nErrors + 1;
                 textTemMin.Text = "";
+                return;
             } else
             {
                 int addRow = tableTemperature.Rows.Add();
@@ -94,26 +76,14 @@ namespace WinFormsApp1.Formularios {
 
 
 
-            reportTempMediaA.Text = "Temperatura media: " + temperaturaMediaA.ToString();
-            reportTempMediaB.Text = "Temperatura media: " + temperaturaMediaB.ToString();
+            reportTempMediaA.Text = "Temperatura media: " + Math.Round(temperaturaMediaA, 2).ToString();
+            reportTempMediaB.Text = "Temperatura media: " + Math.Round(temperaturaMediaB, 2).ToString();
 
-            reportTempMaximaA.Text = "Temperatura Máxima: " + temperaturaMaximaA.ToString();
-            reportTempMaximaB.Text = "Temperatura Máxima: " + temperaturaMaximaB.ToString();
+            reportTempMaximaA.Text = "Temperatura Máxima: " + Math.Round(temperaturaMaximaA, 2).ToString();
+            reportTempMaximaB.Text = "Temperatura Máxima: " + Math.Round(temperaturaMaximaB, 2).ToString();
 
-            reportTempMinA.Text = "Temperatura Minima: " + temperaturaMinimaA.ToString();
-            reportTempMinB.Text = "Temperatura Minima: " + temperaturaMinimaB.ToString();
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void calcularMinima(double[] temps)
-        {
-            min = temps.Min();
-            //Console.WriteLine("La temperatura minima  es {0}", min);
-
+            reportTempMinA.Text = "Temperatura Minima: " + Math.Round(temperaturaMinimaA, 2).ToString();
+            reportTempMinB.Text = "Temperatura Minima: " + Math.Round(temperaturaMinimaB, 2).ToString();
         }
 
         public Form5(Form menu) {
@@ -129,9 +99,8 @@ namespace WinFormsApp1.Formularios {
             this.menu.Show();
         }
 
-        private void btn_calcular_Click(object sender, EventArgs e)
-        {
-          
+        private void textTemMax_KeyPress(object sender, KeyPressEventArgs e) {
+            e.Handled = Utils.validarDecimal(e.KeyChar);
         }
     }
 }

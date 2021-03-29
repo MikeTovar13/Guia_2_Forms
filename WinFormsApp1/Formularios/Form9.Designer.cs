@@ -133,7 +133,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // btnCrearTabla
             // 
-            this.btnCrearTabla.Location = new System.Drawing.Point(114, 249);
+            this.btnCrearTabla.Location = new System.Drawing.Point(12, 212);
             this.btnCrearTabla.Name = "btnCrearTabla";
             this.btnCrearTabla.Size = new System.Drawing.Size(75, 23);
             this.btnCrearTabla.TabIndex = 18;
