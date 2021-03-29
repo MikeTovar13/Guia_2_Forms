@@ -104,6 +104,11 @@ namespace WinFormsApp1.Formularios {
             reportTempMinB.Text = "Temperatura Minima: " + temperaturaMinimaB.ToString();
         }
 
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void calcularMinima(double[] temps)
         {
             min = temps.Min();

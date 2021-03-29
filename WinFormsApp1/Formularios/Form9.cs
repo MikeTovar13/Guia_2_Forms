@@ -85,5 +85,10 @@ namespace WinFormsApp1.Formularios {
         private void label7_Click(object sender, EventArgs e) {
 
         }
+
+        private void txtNumEstudiantes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

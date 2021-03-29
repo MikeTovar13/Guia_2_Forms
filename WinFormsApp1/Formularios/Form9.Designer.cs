@@ -120,6 +120,7 @@ namespace WinFormsApp1.Formularios {
             this.txtNumEstudiantes.Name = "txtNumEstudiantes";
             this.txtNumEstudiantes.Size = new System.Drawing.Size(47, 23);
             this.txtNumEstudiantes.TabIndex = 16;
+            this.txtNumEstudiantes.TextChanged += new System.EventHandler(this.txtNumEstudiantes_TextChanged);
             this.txtNumEstudiantes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumEstudiantes_KeyPress);
             // 
             // txtNumMaterias

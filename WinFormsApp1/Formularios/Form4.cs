@@ -100,5 +100,10 @@ namespace WinFormsApp1.Formularios {
             salarioLabel.Text = "";
             labelError.Text = "";
         }
+
+        private void input_prod_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
