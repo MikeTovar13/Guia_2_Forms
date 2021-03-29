@@ -54,10 +54,6 @@ namespace WinFormsApp1.Formularios {
             peso_joven = 0;
             peso_adulto = 0;
             peso_viejo = 0;
-            promedio_niño = 0;
-            promedio_joven = 0;
-            promedio_adulto = 0;
-            promedio_viejo = 0;
 
             for (int i = 0; i < num; i++)
             {
@@ -70,7 +66,7 @@ namespace WinFormsApp1.Formularios {
                     peso_viejo += peso;
                     viejo++;
                 } else if (edad > 30) {
-                    peso_adulto = peso_adulto + peso;
+                    peso_adulto += peso;
                     adulto++;
                 } else if (edad > 13) {
                     peso_joven += peso;

@@ -100,7 +100,7 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void textTemMax_KeyPress(object sender, KeyPressEventArgs e) {
-            e.Handled = Utils.validarDecimal(e.KeyChar);
+            e.Handled = Utils.validarInt(e.KeyChar);
         }
     }
 }
