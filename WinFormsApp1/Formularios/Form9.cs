@@ -35,8 +35,8 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void btnCrearTabla_Click(object sender, EventArgs e) {
-            num_estudiantes = int.Parse(txtNumEstudiantes.Text);
-            num_materias = int.Parse(txtNumMaterias.Text);
+            int.TryParse(txtNumEstudiantes.Text, out num_estudiantes);
+            int.TryParse(txtNumMaterias.Text, out num_materias);
             tabla = new DataTable();
             for (int i = 0; i < num_estudiantes; i++) {
                 tabla.Columns.Add("Estudiante " + (i + 1), typeof(float));
@@ -89,6 +89,20 @@ namespace WinFormsApp1.Formularios {
         private void txtNumEstudiantes_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvPromedios_DataError(object sender, DataGridViewDataErrorEventArgs e) {
+            MessageBox.Show("Las notas deben ser números positivos entre 1 y 5. Para decimales usar coma \",\"", "Error de escritura");
+
+        }
+
+        private void dgvPromedios_CellEndEdit(object sender, DataGridViewCellEventArgs e) {
+            double valor;
+            double.TryParse(dgvPromedios.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString(), out valor);
+
+            if (valor > 5 || valor < 0) {
+                dgvPromedios.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = null;
+            }
         }
     }
 }

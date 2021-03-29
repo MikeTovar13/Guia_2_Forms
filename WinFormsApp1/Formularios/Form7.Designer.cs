@@ -25,7 +25,7 @@ namespace WinFormsApp1.Formularios {
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_salir = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -118,20 +118,21 @@ namespace WinFormsApp1.Formularios {
             this.tabledata.Location = new System.Drawing.Point(12, 201);
             this.tabledata.MultiSelect = false;
             this.tabledata.Name = "tabledata";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.NullValue = "Materia";
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabledata.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.NullValue = "Materia";
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabledata.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tabledata.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.tabledata.RowTemplate.Height = 25;
             this.tabledata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.tabledata.Size = new System.Drawing.Size(288, 212);
             this.tabledata.TabIndex = 64;
+            this.tabledata.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.tabledata_DataError);
             // 
             // label4
             // 
@@ -164,10 +165,10 @@ namespace WinFormsApp1.Formularios {
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(306, 201);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 15);
+            this.label13.Size = new System.Drawing.Size(69, 17);
             this.label13.TabIndex = 82;
             this.label13.Text = "Resultado";
             // 
@@ -187,9 +188,8 @@ namespace WinFormsApp1.Formularios {
             this.niño_promedio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.niño_promedio.Location = new System.Drawing.Point(306, 238);
             this.niño_promedio.Name = "niño_promedio";
-            this.niño_promedio.Size = new System.Drawing.Size(59, 15);
+            this.niño_promedio.Size = new System.Drawing.Size(0, 15);
             this.niño_promedio.TabIndex = 84;
-            this.niño_promedio.Text = "Resultado";
             // 
             // joven_promedio
             // 
@@ -197,9 +197,8 @@ namespace WinFormsApp1.Formularios {
             this.joven_promedio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.joven_promedio.Location = new System.Drawing.Point(306, 272);
             this.joven_promedio.Name = "joven_promedio";
-            this.joven_promedio.Size = new System.Drawing.Size(59, 15);
+            this.joven_promedio.Size = new System.Drawing.Size(0, 15);
             this.joven_promedio.TabIndex = 85;
-            this.joven_promedio.Text = "Resultado";
             // 
             // adulto_promedio
             // 
@@ -207,9 +206,8 @@ namespace WinFormsApp1.Formularios {
             this.adulto_promedio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.adulto_promedio.Location = new System.Drawing.Point(306, 307);
             this.adulto_promedio.Name = "adulto_promedio";
-            this.adulto_promedio.Size = new System.Drawing.Size(59, 15);
+            this.adulto_promedio.Size = new System.Drawing.Size(0, 15);
             this.adulto_promedio.TabIndex = 86;
-            this.adulto_promedio.Text = "Resultado";
             // 
             // viejo_promedio
             // 
@@ -217,9 +215,8 @@ namespace WinFormsApp1.Formularios {
             this.viejo_promedio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.viejo_promedio.Location = new System.Drawing.Point(306, 342);
             this.viejo_promedio.Name = "viejo_promedio";
-            this.viejo_promedio.Size = new System.Drawing.Size(59, 15);
+            this.viejo_promedio.Size = new System.Drawing.Size(0, 15);
             this.viejo_promedio.TabIndex = 87;
-            this.viejo_promedio.Text = "Resultado";
             // 
             // label9
             // 

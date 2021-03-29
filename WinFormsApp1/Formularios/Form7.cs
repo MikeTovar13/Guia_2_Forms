@@ -85,9 +85,9 @@ namespace WinFormsApp1.Formularios {
                 promedio_viejo = this.promedio(viejo, peso_viejo);
 
                 niño_promedio.Text = "La cantidad de niños es: " + niño + " de "+num+" personas, su promedio de peso es: " + promedio_niño;
-                joven_promedio.Text = "La cantidad de niños es: " + joven + " de " + num + " personas, su promedio de peso es: " + promedio_joven;
-                adulto_promedio.Text = "La cantidad de niños es: " + adulto + " de " + num + " personas, su promedio de peso es: " + promedio_adulto;
-                viejo_promedio.Text = "La cantidad de niños es: " + viejo + " de " + num + " personas, su promedio de peso es: " + promedio_viejo;
+                joven_promedio.Text = "La cantidad de jovenes es: " + joven + " de " + num + " personas, su promedio de peso es: " + promedio_joven;
+                adulto_promedio.Text = "La cantidad de adultos es: " + adulto + " de " + num + " personas, su promedio de peso es: " + promedio_adulto;
+                viejo_promedio.Text = "La cantidad de viejos es: " + viejo + " de " + num + " personas, su promedio de peso es: " + promedio_viejo;
 
             }
                 
@@ -103,6 +103,15 @@ namespace WinFormsApp1.Formularios {
 
         private void input_prod_KeyPress(object sender, KeyPressEventArgs e) {
             e.Handled = Utils.validarInt(e.KeyChar);
+        }
+
+        private void tabledata_DataError(object sender, DataGridViewDataErrorEventArgs e) {
+            if (e.ColumnIndex == 0) {
+                MessageBox.Show("La edad debe ser número entero", "Error de escritura");
+            } else {
+                MessageBox.Show("El peso debe ser un número. Para decimales usar coma \",\"", "Error de escritura");
+            }
+
         }
     }
 }

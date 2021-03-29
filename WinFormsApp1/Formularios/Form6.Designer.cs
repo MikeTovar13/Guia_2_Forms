@@ -157,6 +157,7 @@ namespace WinFormsApp1.Formularios {
             this.tabledata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.tabledata.Size = new System.Drawing.Size(156, 196);
             this.tabledata.TabIndex = 39;
+            this.tabledata.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.tabledata_DataError);
             // 
             // btn_calcular
             // 

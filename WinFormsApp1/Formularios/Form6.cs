@@ -81,5 +81,10 @@ namespace WinFormsApp1.Formularios {
         private void input_prod_KeyPress(object sender, KeyPressEventArgs e) {
             e.Handled = Utils.validarInt(e.KeyChar);
         }
+
+        private void tabledata_DataError(object sender, DataGridViewDataErrorEventArgs e) {
+            MessageBox.Show("Solo se reciben números. Para decimales usar coma \",\"", "Error de escritura");
+
+        }
     }
 }

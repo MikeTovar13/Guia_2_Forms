@@ -163,6 +163,8 @@ namespace WinFormsApp1.Formularios {
             this.dgvPromedios.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPromedios.Size = new System.Drawing.Size(510, 150);
             this.dgvPromedios.TabIndex = 19;
+            this.dgvPromedios.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPromedios_CellEndEdit);
+            this.dgvPromedios.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvPromedios_DataError);
             // 
             // btnPromedios
             // 
