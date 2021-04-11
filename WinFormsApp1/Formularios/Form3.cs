@@ -20,7 +20,7 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e) {
-            this.menu.Show();
+            //this.menu.Show();
         }
 
         private void btn_operar_Click(object sender, EventArgs e)

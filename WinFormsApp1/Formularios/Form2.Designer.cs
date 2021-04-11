@@ -24,12 +24,6 @@ namespace WinFormsApp1.Formularios {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.btn_salir = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_operar = new System.Windows.Forms.Button();
             this.lb_resultado = new System.Windows.Forms.Label();
@@ -50,70 +44,14 @@ namespace WinFormsApp1.Formularios {
             this.rb_raiz = new System.Windows.Forms.RadioButton();
             this.rb_exponencial3 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grp_operaciones.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_salir
-            // 
-            this.btn_salir.BackColor = System.Drawing.Color.DimGray;
-            this.btn_salir.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_salir.Location = new System.Drawing.Point(713, 415);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(75, 23);
-            this.btn_salir.TabIndex = 8;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = false;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(64, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Grupo 3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(64, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 15);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Electiva I";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(64, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 15);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Universidad ECCI";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(237, 167);
+            this.label9.Location = new System.Drawing.Point(239, 102);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(159, 12);
             this.label9.TabIndex = 38;
@@ -121,7 +59,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // btn_operar
             // 
-            this.btn_operar.Location = new System.Drawing.Point(237, 263);
+            this.btn_operar.Location = new System.Drawing.Point(239, 198);
             this.btn_operar.Name = "btn_operar";
             this.btn_operar.Size = new System.Drawing.Size(75, 23);
             this.btn_operar.TabIndex = 37;
@@ -133,7 +71,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.lb_resultado.AutoSize = true;
             this.lb_resultado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_resultado.Location = new System.Drawing.Point(662, 205);
+            this.lb_resultado.Location = new System.Drawing.Point(664, 140);
             this.lb_resultado.Name = "lb_resultado";
             this.lb_resultado.Size = new System.Drawing.Size(19, 21);
             this.lb_resultado.TabIndex = 36;
@@ -143,7 +81,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(530, 205);
+            this.label8.Location = new System.Drawing.Point(532, 140);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 19);
             this.label8.TabIndex = 35;
@@ -151,7 +89,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // txt_numero2
             // 
-            this.txt_numero2.Location = new System.Drawing.Point(368, 218);
+            this.txt_numero2.Location = new System.Drawing.Point(370, 153);
             this.txt_numero2.Name = "txt_numero2";
             this.txt_numero2.Size = new System.Drawing.Size(100, 23);
             this.txt_numero2.TabIndex = 34;
@@ -159,7 +97,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // txt_numero1
             // 
-            this.txt_numero1.Location = new System.Drawing.Point(368, 190);
+            this.txt_numero1.Location = new System.Drawing.Point(370, 125);
             this.txt_numero1.Name = "txt_numero1";
             this.txt_numero1.Size = new System.Drawing.Size(100, 23);
             this.txt_numero1.TabIndex = 33;
@@ -169,7 +107,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(236, 220);
+            this.label7.Location = new System.Drawing.Point(238, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(126, 19);
             this.label7.TabIndex = 32;
@@ -179,7 +117,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(236, 190);
+            this.label6.Location = new System.Drawing.Point(238, 125);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 19);
             this.label6.TabIndex = 31;
@@ -189,7 +127,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(236, 146);
+            this.label5.Location = new System.Drawing.Point(238, 81);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(214, 19);
             this.label5.TabIndex = 30;
@@ -207,7 +145,7 @@ namespace WinFormsApp1.Formularios {
             this.grp_operaciones.Controls.Add(this.rb_raiz);
             this.grp_operaciones.Controls.Add(this.rb_exponencial3);
             this.grp_operaciones.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.grp_operaciones.Location = new System.Drawing.Point(10, 122);
+            this.grp_operaciones.Location = new System.Drawing.Point(12, 57);
             this.grp_operaciones.Name = "grp_operaciones";
             this.grp_operaciones.Size = new System.Drawing.Size(200, 266);
             this.grp_operaciones.TabIndex = 29;
@@ -327,41 +265,11 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(10, 74);
+            this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(598, 21);
             this.label4.TabIndex = 28;
             this.label4.Text = "Este programa te hace la función matemática que desees, escoge una opción:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(63, 40);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 15);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Grupo 3";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(63, 26);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 15);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "Electiva I";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(63, 10);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 15);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "Universidad ECCI";
             // 
             // Form2
             // 
@@ -379,18 +287,10 @@ namespace WinFormsApp1.Formularios {
             this.Controls.Add(this.label5);
             this.Controls.Add(this.grp_operaciones);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_salir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "2. Funciones matemáticas";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grp_operaciones.ResumeLayout(false);
             this.grp_operaciones.PerformLayout();
             this.ResumeLayout(false);
@@ -399,12 +299,6 @@ namespace WinFormsApp1.Formularios {
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_operar;
         private System.Windows.Forms.Label lb_resultado;
@@ -420,9 +314,6 @@ namespace WinFormsApp1.Formularios {
         private System.Windows.Forms.RadioButton rb_raiz;
         private System.Windows.Forms.RadioButton rb_exponencial3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RadioButton rb_circunferencia;
         private System.Windows.Forms.RadioButton rb_hipotenusa;
         private System.Windows.Forms.RadioButton rb_tangente;

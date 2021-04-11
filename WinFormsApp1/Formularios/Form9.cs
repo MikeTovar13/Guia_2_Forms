@@ -104,5 +104,9 @@ namespace WinFormsApp1.Formularios {
                 dgvPromedios.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = null;
             }
         }
+
+        private void Form9_Load(object sender, EventArgs e) {
+
+        }
     }
 }

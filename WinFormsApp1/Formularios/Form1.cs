@@ -21,7 +21,7 @@ namespace WinFormsApp1 {
             this.Close();
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
-            this.menu.Show();
+           // this.menu.Show();
         }
 
         private void btn_operar_Click(object sender, EventArgs e) {

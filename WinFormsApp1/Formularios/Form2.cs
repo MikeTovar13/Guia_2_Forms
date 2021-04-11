@@ -21,7 +21,7 @@ namespace WinFormsApp1.Formularios {
             this.Close();
         }
         private void Form2_FormClosed(object sender, FormClosedEventArgs e) {
-            this.menu.Show();
+            //this.menu.Show();
         }
 
         private void btn_operar_Click(object sender, EventArgs e) {
@@ -32,10 +32,8 @@ namespace WinFormsApp1.Formularios {
             double numero2;
 
 
-            foreach (RadioButton rb in grp_operaciones.Controls)
-            {
-                if (rb.Checked)
-                {
+            foreach (RadioButton rb in grp_operaciones.Controls) {
+                if (rb.Checked) {
                     operacion = rb.Name;
                 }
             }
@@ -43,8 +41,7 @@ namespace WinFormsApp1.Formularios {
             // Obtener numeros de los textbox
             double.TryParse(txt_numero1.Text, out numero1);
 
-            switch (operacion)
-            {
+            switch (operacion) {
                 case "rb_raiz":
                     resultado = Math.Sqrt(numero1);
                     break;
@@ -72,12 +69,12 @@ namespace WinFormsApp1.Formularios {
                 case "rb_hipotenusa":
                     double.TryParse(txt_numero2.Text, out numero2);
                     double h2 = Math.Pow(numero1, 2) + Math.Pow(numero2, 2);
-                      resultado = Math.Sqrt(h2);
+                    resultado = Math.Sqrt(h2);
                     break;
                 case "rb_circunferencia":
                     resultado = Math.PI * Math.Pow(numero1, 2);
                     break;
-                    
+
             }
 
             lb_resultado.Text = Math.Round(resultado, 2).ToString();

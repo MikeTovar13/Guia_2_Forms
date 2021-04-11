@@ -24,13 +24,7 @@ namespace WinFormsApp1.Formularios {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btn_salir = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.input_prod = new System.Windows.Forms.TextBox();
@@ -41,67 +35,14 @@ namespace WinFormsApp1.Formularios {
             this.npositivos = new System.Windows.Forms.Label();
             this.nnegativos = new System.Windows.Forms.Label();
             this.nneutros = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabledata)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_salir
-            // 
-            this.btn_salir.BackColor = System.Drawing.Color.DimGray;
-            this.btn_salir.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_salir.Location = new System.Drawing.Point(713, 415);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(75, 23);
-            this.btn_salir.TabIndex = 9;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = false;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(64, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Grupo 3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(64, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 15);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Electiva I";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(64, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 15);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Universidad ECCI";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(12, 76);
+            this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(595, 21);
             this.label4.TabIndex = 29;
@@ -111,7 +52,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(12, 133);
+            this.label5.Location = new System.Drawing.Point(12, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(174, 15);
             this.label5.TabIndex = 31;
@@ -119,7 +60,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // input_prod
             // 
-            this.input_prod.Location = new System.Drawing.Point(12, 166);
+            this.input_prod.Location = new System.Drawing.Point(12, 99);
             this.input_prod.Name = "input_prod";
             this.input_prod.Size = new System.Drawing.Size(40, 23);
             this.input_prod.TabIndex = 34;
@@ -127,7 +68,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // btn_operar
             // 
-            this.btn_operar.Location = new System.Drawing.Point(64, 166);
+            this.btn_operar.Location = new System.Drawing.Point(64, 99);
             this.btn_operar.Name = "btn_operar";
             this.btn_operar.Size = new System.Drawing.Size(75, 23);
             this.btn_operar.TabIndex = 38;
@@ -140,7 +81,7 @@ namespace WinFormsApp1.Formularios {
             this.tabledata.AllowUserToAddRows = false;
             this.tabledata.AllowUserToDeleteRows = false;
             this.tabledata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabledata.Location = new System.Drawing.Point(12, 199);
+            this.tabledata.Location = new System.Drawing.Point(12, 132);
             this.tabledata.MultiSelect = false;
             this.tabledata.Name = "tabledata";
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -161,7 +102,7 @@ namespace WinFormsApp1.Formularios {
             // 
             // btn_calcular
             // 
-            this.btn_calcular.Location = new System.Drawing.Point(174, 372);
+            this.btn_calcular.Location = new System.Drawing.Point(174, 305);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(75, 23);
             this.btn_calcular.TabIndex = 40;
@@ -173,7 +114,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(174, 199);
+            this.label9.Location = new System.Drawing.Point(174, 132);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 17);
             this.label9.TabIndex = 78;
@@ -183,7 +124,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.npositivos.AutoSize = true;
             this.npositivos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.npositivos.Location = new System.Drawing.Point(174, 229);
+            this.npositivos.Location = new System.Drawing.Point(174, 162);
             this.npositivos.Name = "npositivos";
             this.npositivos.Size = new System.Drawing.Size(0, 15);
             this.npositivos.TabIndex = 79;
@@ -192,7 +133,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.nnegativos.AutoSize = true;
             this.nnegativos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nnegativos.Location = new System.Drawing.Point(174, 259);
+            this.nnegativos.Location = new System.Drawing.Point(174, 192);
             this.nnegativos.Name = "nnegativos";
             this.nnegativos.Size = new System.Drawing.Size(0, 15);
             this.nnegativos.TabIndex = 80;
@@ -201,7 +142,7 @@ namespace WinFormsApp1.Formularios {
             // 
             this.nneutros.AutoSize = true;
             this.nneutros.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nneutros.Location = new System.Drawing.Point(174, 287);
+            this.nneutros.Location = new System.Drawing.Point(174, 220);
             this.nneutros.Name = "nneutros";
             this.nneutros.Size = new System.Drawing.Size(0, 15);
             this.nneutros.TabIndex = 81;
@@ -221,15 +162,10 @@ namespace WinFormsApp1.Formularios {
             this.Controls.Add(this.input_prod);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_salir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form6";
             this.Text = "6. Algoritmo de suma";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form6_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabledata)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,12 +173,6 @@ namespace WinFormsApp1.Formularios {
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox input_prod;

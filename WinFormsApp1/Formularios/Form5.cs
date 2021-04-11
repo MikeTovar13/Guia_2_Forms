@@ -96,7 +96,7 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void Form5_FormClosed(object sender, FormClosedEventArgs e) {
-            this.menu.Show();
+            //this.menu.Show();
         }
 
         private void textTemMax_KeyPress(object sender, KeyPressEventArgs e) {

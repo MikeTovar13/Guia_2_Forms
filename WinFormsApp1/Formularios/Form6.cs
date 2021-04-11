@@ -18,7 +18,7 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void Form6_FormClosed(object sender, FormClosedEventArgs e) {
-            this.menu.Show();
+            //this.menu.Show();
         }
 
         private void btn_salir_Click(object sender, EventArgs e) {

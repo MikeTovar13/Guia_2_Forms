@@ -21,7 +21,7 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void Form4_FormClosed(object sender, FormClosedEventArgs e) {
-            this.menu.Show();
+            //this.menu.Show();
         }
 
         private void btn_calcular_Click(object sender, EventArgs e)

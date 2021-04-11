@@ -16,7 +16,7 @@ namespace WinFormsApp1.Formularios {
         }
 
         private void Form8_FormClosed(object sender, FormClosedEventArgs e) {
-            this.menu.Show();
+            //this.menu.Show();
         }
 
         private void btn_salir_Click(object sender, EventArgs e) {
@@ -60,6 +60,10 @@ namespace WinFormsApp1.Formularios {
 
         private void txt_dias_KeyPress(object sender, KeyPressEventArgs e) {
             e.Handled = Utils.validarInt(e.KeyChar);
+        }
+
+        private void Form8_Load(object sender, EventArgs e) {
+
         }
     }
 }
