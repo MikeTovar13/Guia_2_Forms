@@ -227,7 +227,6 @@ namespace WinFormsApp1.Formularios {
             this.dgvNomina.AllowUserToAddRows = false;
             this.dgvNomina.AllowUserToDeleteRows = false;
             this.dgvNomina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNomina.Enabled = false;
             this.dgvNomina.Location = new System.Drawing.Point(12, 140);
             this.dgvNomina.Name = "dgvNomina";
             this.dgvNomina.ReadOnly = true;
